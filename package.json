@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "aws-sdk": "^2.1462.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "serverless-offline": "^13.0.0"
+  },
+  "name": "reto-tecnico",
+  "description": "```\r - npm install -g serverless@latest\r - serverless config credentials --provider aws --key write-the-public-key --secret write-the-secret-key\r - serverless create --template aws-nodejs --name reto-tecnico\r ```",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

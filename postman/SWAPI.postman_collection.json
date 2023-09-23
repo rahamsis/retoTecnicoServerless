@@ -1,0 +1,310 @@
+{
+	"info": {
+		"_postman_id": "28af66b5-6514-4457-8aed-2b52dbfe7c84",
+		"name": "SWAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14041266"
+	},
+	"item": [
+		{
+			"name": "getPeople",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3500/people/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"people",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPlanets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3500/planets/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"planets",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSpecies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3500/species/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"species",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addPeople",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"new person\",\r\n    \"height\": \"172\",\r\n    \"mass\": \"77\",\r\n    \"hair_color\": \"blond\",\r\n    \"skin_color\": \"fair\",\r\n    \"eye_color\": \"blue\",\r\n    \"birth_year\": \"19BBY\",\r\n    \"gender\": \"male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3500/addpeople",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"addpeople"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addPlanets",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Tatooine\",\r\n    \"rotation_period\": \"23\",\r\n    \"orbital_period\": \"304\",\r\n    \"diameter\": \"10465\",\r\n    \"climate\": \"arid\",\r\n    \"gravity\": \"1 standard\",\r\n    \"terrain\": \"desert\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3500/addplanets",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"addplanets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addSpecies",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Human\",\r\n    \"classification\": \"mammal\",\r\n    \"designation\": \"sentient\",\r\n    \"average_height\": \"180\",\r\n    \"skin_colors\": \"caucasian, black, asian, hispanic\",\r\n    \"hair_colors\": \"blonde, brown, black, red\",\r\n    \"eye_colors\": \"brown, blue, green, hazel, grey, amber\",    \r\n    \"language\": \"Galactic Basic\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3500/addspecies",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"addspecies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePeople",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3500/deletepeople",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"deletepeople"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePlanets",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3500/deleteplanets",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"deleteplanets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteSpecies",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3500/deletespecies",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"deletespecies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePeople",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"new name\",\r\n    \"height\": \"172\",\r\n    \"mass\": \"77\",\r\n    \"hair_color\": \"blond\",\r\n    \"skin_color\": \"fair\",\r\n    \"eye_color\": \"blue\",\r\n    \"birth_year\": \"19BBY\",\r\n    \"gender\": \"male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3500/updatepeople",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"updatepeople"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePlanets",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Tatooine\",\r\n    \"rotation_period\": \"23\",\r\n    \"orbital_period\": \"304\",\r\n    \"diameter\": \"10465\",\r\n    \"climate\": \"arid\",\r\n    \"gravity\": \"1 standard\",\r\n    \"terrain\": \"desert\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3500/updateplanets",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"updateplanets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateSpecies",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"new specie\",\r\n    \"classification\": \"mammal\",\r\n    \"designation\": \"sentient\",\r\n    \"average_height\": \"180\",\r\n    \"skin_colors\": \"caucasian, black, asian, hispanic\",\r\n    \"hair_colors\": \"blonde, brown, black, red\",\r\n    \"eye_colors\": \"brown, blue, green, hazel, grey, amber\",\r\n    \"language\": \"Galactic Basic\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3500/updatespecies",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"updatespecies"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
